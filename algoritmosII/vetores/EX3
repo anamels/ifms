@@ -1,0 +1,26 @@
+#include <stdio.h> 
+int main () {
+	
+	int v[5], c, i, aux;
+	
+	for(i = 0; i < 5; i++){
+		printf("informe um numero: ");
+		scanf("%d", &v[i]);
+	}
+	
+	for (c = 1; c < 5; c++) {
+		for(i = 0; i < 4; i++) {
+			if(v[i] > v[i + 1]){
+				aux = v[i];
+				v[i] = v[i + 1];
+				v[i + 1] = aux;
+			}
+		}
+	}
+	
+	for(i = 0; i < 5; i++){
+		printf("%d ", v[i]);
+	}
+	
+	return 0;
+}
