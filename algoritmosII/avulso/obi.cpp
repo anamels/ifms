@@ -1,23 +1,22 @@
 #include <stdio.h>
-int main ( ){
+
+int main(){
+
+	// le estrada e cidades
 	
 	int t, n;
-	
-	//l� estrada e cidades
 	scanf("%d%d", &t, &n);
 	
-	//l� distancia
+	// le distancia
 	
 	int v[n], i;
-	
 	for(i = 0; i < n; i++){
 		scanf("%d", &v[i]);
 	}
 	
-	//colocar em ordem de lugar na estrada
+	// colocar em ordem de lugar na estrada
 	
 	int j, aux;
-	
 	for(j = 1; j < n; j++) {
 		for(i = 0; i < n-1; i++) {
 			if(v[i] > v[i+1]) {
@@ -32,7 +31,6 @@ int main ( ){
 	//cria vetor pra armazenar distancia e armazena a primeira
 	
 	double d[n];
-	
 	double dist1 = (t - v[0]) + ((v[1] - v[0])/ 2.0) ;
 	d[0] = dist1;
 	
