@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (){
+int main(){
 	int tam;
 	printf("quantos numeros deseja ordenar?: ");
 	scanf("%d", &tam);
