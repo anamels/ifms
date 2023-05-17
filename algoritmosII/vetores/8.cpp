@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main ( ) {
+int main(){
 	int tam = 15;
 	int v[tam], i, c, comando;
 	
