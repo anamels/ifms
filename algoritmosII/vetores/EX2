@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main () {
-	
 	int v[10], i, c, rep;
 	
 	printf("informe a senha, um numero por vez: \n");
